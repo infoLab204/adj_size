@@ -27,26 +27,30 @@ We proposed a computational model and method to account for sample dependence in
 
 ## R script for graph density modeling
 ### 1.	Estimating variance of graph density: model-free data      
-●	Density3.R: main script    
-●	eval_corr.R: estimate correlation coefficient    
-●	cgraph.R: graphical analysis of data    
+  
+    source(eval_corr.R) # estimate correlation coefficient    
+    source(cgraph.R) # graphical analysis of data    
+*	usage : Rscript Density3.R: main script  
 
 ### 2.	Estimating variance of graph density: model-based data    
-●	Gdensity.R: main script    
-●	gene_input.R: generate input    
-●	subsample.R: subsampling   
-●	cgraph.R: graphical analysis of data    
-●	cor_test.R: estimate correlation coefficient    
+   
+    source(gene_input.R) # generate input    
+    source(subsample.R) # subsampling   
+    source(cgraph.R) # graphical analysis of data    
+    source(cor_test.R) # estimate correlation coefficient    
+*	usage : Rscript Gdensity.R: main script 
 
 ### 3.	Estimating variance of graph density: 44K_SNP data    
-●	Density1.R: main script    
-●	eval_corr.R: estimate correlation coefficient    
-●	cgraph.R: graphical analysis of data    
-●	shuffle.R: shuffling data    
+ 
+    source(eval_corr.R) # estimate correlation coefficient    
+    source(cgraph.R) # graphical analysis of data    
+    source(shuffle.R) #shuffling data    
+* usage : Rscript	Density1.R: main script   
 
 ### 4.	Estimating variance of graph density: 580K_SNP data    
-●	Density2.R: main script    
-●	cgraph.R: graphical analysis of data   
+   
+    source(cgraph.R) # graphical analysis of data   
+* usage : Rscript Density2.R: main script 
 
 ## C codes for modeling variance of graph density and estimating parameters
 
