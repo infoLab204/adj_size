@@ -39,19 +39,23 @@ We proposed a computational model and method to account for sample dependence in
     source(subsample.R) # subsampling   
     source(cgraph.R) # graphical analysis of data    
     source(cor_test.R) # estimate correlation coefficient    
-*	usage : Rscript Gdensity.R: main script 
+*	usage : Rscript Gdensity.R  1000 30  0.3  0.4  20 &
+
 
 ### 3.	Estimating variance of graph density: 44K_SNP data    
  
     source(eval_corr.R) # estimate correlation coefficient    
     source(cgraph.R) # graphical analysis of data    
     source(shuffle.R) #shuffling data    
-* usage : Rscript	Density1.R: main script   
+* usage : Rscript Density1.R 20 0 &     # for shuffle
+* usage : Rscript Density1.R 20 1 &     # for unshuffle
 
+  
 ### 4.	Estimating variance of graph density: 580K_SNP data    
    
     source(cgraph.R) # graphical analysis of data   
-* usage : Rscript Density2.R: main script 
+* usage : Rscript Density2.R 20 0 &     # for shuffled
+* usage : Rscript Density2.R 20 1 &     # for unshuffled
 
 ## C codes for modeling variance of graph density and estimating parameters
 
