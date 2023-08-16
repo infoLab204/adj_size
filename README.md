@@ -14,8 +14,8 @@ We proposed a computational model and method to account for sample dependence in
 ## R script for estimating p values 
 ### 1. Generating model-free data and estimating p values: Pvalue_nomodel.R       
 *	eval_corr.R    
-*	usage: Rscript Pvalue.R  20  20  0 &    # for independent data    
-*	usage: Rscript Pvalue.R  20  20  1 &    # for dependent data    
+*	usage: Rscript Pvalue_nomodel.R  20  20  0 &    # for independent data    
+*	usage: Rscript Pvalue_nomodel.R  20  20  1 &    # for dependent data    
 
 ### 2. Generating model-based data and estimating p values: Pvalue_model.R     
 *	gene_input.R: generate input    
