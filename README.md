@@ -30,8 +30,9 @@ We proposed a computational model and method to account for sample dependence in
   
     source(eval_corr.R) # estimate correlation coefficient    
     source(cgraph.R) # graphical analysis of data    
-*	usage : Rscript Density3.R: main script  
-
+*	usage : Rscript Density3.R  30  20  0 &    # for random
+*	usage : Rscript Density3.R  30  20  1 &    # for correlated
+  
 ### 2.	Estimating variance of graph density: model-based data    
    
     source(gene_input.R) # generate input    
